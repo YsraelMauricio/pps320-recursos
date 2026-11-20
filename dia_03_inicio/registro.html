@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta · EventosUSFA</title>
+  <meta name="description" content="Crea tu cuenta en EventosUSFA.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Eventos</a></li>
+          <li><a href="mis-inscripciones.html">Mis inscripciones</a></li>
+          <li><a href="panel.html">Panel del organizador</a></li>
+          <li><a href="login.html">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Crear cuenta</h1>
+    <p>Regístrate para inscribirte a los eventos de la universidad.</p>
+    <form class="formulario" action="#" method="post">
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80" autocomplete="name">
+      </div>
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required autocomplete="email">
+      </div>
+      <div class="campo">
+        <label for="carrera">Carrera</label>
+        <select id="carrera" name="carrera" required>
+          <option value="">Selecciona una opción</option>
+          <option value="sistemas">Ingeniería de Sistemas</option>
+          <option value="industrial">Ingeniería Industrial</option>
+          <option value="administracion">Administración de Empresas</option>
+          <option value="derecho">Derecho</option>
+          <option value="otra">Otra</option>
+        </select>
+      </div>
+      <fieldset class="campo">
+        <legend>¿Cómo usarás EventosUSFA?</legend>
+        <label><input type="radio" name="rol" value="asistente" checked> Asistir a eventos</label>
+        <label><input type="radio" name="rol" value="organizador"> Organizar eventos</label>
+      </fieldset>
+      <div class="campo">
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required minlength="8" autocomplete="new-password" aria-describedby="clave-ayuda">
+        <p class="ayuda" id="clave-ayuda">Mínimo 8 caracteres.</p>
+      </div>
+      <div class="campo">
+        <label for="clave2">Confirmar contraseña</label>
+        <input type="password" id="clave2" name="clave2" required minlength="8" autocomplete="new-password">
+      </div>
+      <div class="campo">
+        <label><input type="checkbox" id="terminos" name="terminos" required> Acepto las normas de uso de la plataforma</label>
+      </div>
+      <p><button class="boton" type="submit">Crear cuenta</button></p>
+      <p>¿Ya tienes cuenta? <a href="login.html">Ingresa</a></p>
+    </form>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>

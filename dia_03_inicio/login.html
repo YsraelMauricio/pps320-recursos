@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar · EventosUSFA</title>
+  <meta name="description" content="Ingresa a EventosUSFA con tu correo.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Eventos</a></li>
+          <li><a href="mis-inscripciones.html">Mis inscripciones</a></li>
+          <li><a href="panel.html">Panel del organizador</a></li>
+          <li><a href="login.html" aria-current="page">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Ingresar</h1>
+    <p>Ingresa con tu correo para inscribirte a eventos y ver tus inscripciones.</p>
+    <form class="formulario" action="#" method="post">
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="nombre@correo.com">
+      </div>
+      <div class="campo">
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required minlength="8" autocomplete="current-password">
+      </div>
+      <p><button class="boton" type="submit">Ingresar</button></p>
+      <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+    </form>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>

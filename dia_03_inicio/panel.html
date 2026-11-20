@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel del organizador · EventosUSFA</title>
+  <meta name="description" content="Administra tus eventos.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Eventos</a></li>
+          <li><a href="mis-inscripciones.html">Mis inscripciones</a></li>
+          <li><a href="panel.html" aria-current="page">Panel del organizador</a></li>
+          <li><a href="login.html">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Panel del organizador</h1>
+    <p>Administra tus eventos y revisa cuántas personas se inscribieron.</p>
+    <p><a class="boton boton--acento" href="evento-form.html">Crear evento</a></p>
+    <div class="tabla-contenedor">
+      <table class="tabla">
+        <caption>Eventos que organizas</caption>
+        <thead>
+          <tr>
+            <th scope="col">Evento</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Cupos</th>
+            <th scope="col">Inscritos</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Taller de Git y GitHub para principiantes</th>
+            <td><time datetime="2026-12-05T09:00">sábado 5 de diciembre, 09:00</time></td>
+            <td>30</td>
+            <td>18</td>
+            <td>Publicado</td>
+            <td><a href="evento-form.html">Editar</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Hackatón USFA de 12 horas</th>
+            <td><time datetime="2026-12-19T08:00">sábado 19 de diciembre, 08:00</time></td>
+            <td>40</td>
+            <td>32</td>
+            <td>Publicado</td>
+            <td><a href="evento-form.html">Editar</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Charla de bienvenida 2027</th>
+            <td><time datetime="2027-01-15T18:00">viernes 15 de enero, 18:00</time></td>
+            <td>100</td>
+            <td>0</td>
+            <td>Borrador</td>
+            <td><a href="evento-form.html">Editar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis inscripciones · EventosUSFA</title>
+  <meta name="description" content="Eventos a los que te inscribiste.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Eventos</a></li>
+          <li><a href="mis-inscripciones.html" aria-current="page">Mis inscripciones</a></li>
+          <li><a href="panel.html">Panel del organizador</a></li>
+          <li><a href="login.html">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Mis inscripciones</h1>
+    <p>Presenta tu código de acceso al organizador el día del evento.</p>
+    <div class="tabla-contenedor">
+      <table class="tabla">
+        <caption>Eventos a los que te inscribiste</caption>
+        <thead>
+          <tr>
+            <th scope="col">Evento</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Código de acceso</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Conferencia: Inteligencia Artificial en Bolivia</th>
+            <td><time datetime="2026-12-03T18:30">jueves 3 de diciembre, 18:30</time></td>
+            <td>Confirmada</td>
+            <td><code>EVT-7F3K2Q</code></td>
+            <td><button class="boton boton--borde" type="button">Cancelar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Taller de Git y GitHub para principiantes</th>
+            <td><time datetime="2026-12-05T09:00">sábado 5 de diciembre, 09:00</time></td>
+            <td>Confirmada</td>
+            <td><code>EVT-9A1B4C</code></td>
+            <td><button class="boton boton--borde" type="button">Cancelar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Noche de cine: ciencia ficción latinoamericana</th>
+            <td><time datetime="2026-12-04T19:00">viernes 4 de diciembre, 19:00</time></td>
+            <td>Cancelada</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>

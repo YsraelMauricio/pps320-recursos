@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos · EventosUSFA</title>
+  <meta name="description" content="Descubre e inscríbete a los eventos de la Universidad Privada San Francisco de Asís.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Eventos</a></li>
+          <li><a href="mis-inscripciones.html">Mis inscripciones</a></li>
+          <li><a href="panel.html">Panel del organizador</a></li>
+          <li><a href="login.html">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Próximos eventos</h1>
+    <p>Encuentra talleres, conferencias y actividades de la universidad e inscríbete en un clic.</p>
+    <search class="filtros">
+      <form action="index.html" method="get" class="filtros__form">
+        <div class="campo">
+          <label for="q">Buscar por título</label>
+          <input type="search" id="q" name="q" placeholder="Ej. taller">
+        </div>
+        <div class="campo">
+          <label for="categoria">Categoría</label>
+          <select id="categoria" name="categoria">
+            <option value="">Todas</option>
+            <option value="taller">Taller</option>
+            <option value="conferencia">Conferencia</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="cultural">Cultural</option>
+            <option value="feria">Feria</option>
+            <option value="competencia">Competencia</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="desde">Desde</label>
+          <input type="date" id="desde" name="desde">
+        </div>
+        <button class="boton" type="submit">Filtrar</button>
+      </form>
+    </search>
+    <section aria-labelledby="listado">
+      <h2 id="listado">Listado de eventos</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <p class="etiqueta">Conferencia</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Conferencia: Inteligencia Artificial en Bolivia</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-03T18:30">jueves 3 de diciembre, 18:30</time><br>Auditorio Principal</p>
+          <p class="tarjeta__cupos"><span class="etiqueta">Cupos disponibles: 64 de 200</span></p>
+        </article>
+        <article class="tarjeta">
+          <p class="etiqueta">Cultural</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Noche de cine: ciencia ficción latinoamericana</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-04T19:00">viernes 4 de diciembre, 19:00</time><br>Sala audiovisual</p>
+          <p class="tarjeta__cupos"><span class="etiqueta">Cupos disponibles: 25 de 60</span></p>
+        </article>
+        <article class="tarjeta">
+          <p class="etiqueta">Taller</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Taller de Git y GitHub para principiantes</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-05T09:00">sábado 5 de diciembre, 09:00</time><br>Laboratorio 3, Edificio de Sistemas</p>
+          <p class="tarjeta__cupos"><span class="etiqueta">Cupos disponibles: 12 de 30</span></p>
+        </article>
+        <article class="tarjeta">
+          <p class="etiqueta">Feria</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Feria de emprendimientos universitarios</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-10T10:00">jueves 10 de diciembre, 10:00</time><br>Patio central</p>
+          <p class="tarjeta__cupos"><span class="etiqueta">Cupos disponibles: 310 de 500</span></p>
+        </article>
+        <article class="tarjeta">
+          <p class="etiqueta">Deportivo</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Torneo interfacultades de fútbol sala</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-12T08:00">sábado 12 de diciembre, 08:00</time><br>Cancha polideportiva</p>
+          <p class="tarjeta__cupos"><span class="etiqueta etiqueta--agotado">Cupos agotados</span></p>
+        </article>
+        <article class="tarjeta">
+          <p class="etiqueta">Competencia</p>
+          <h3 class="tarjeta__titulo"><a href="evento.html">Hackatón USFA de 12 horas</a></h3>
+          <p class="tarjeta__meta"><time datetime="2026-12-19T08:00">sábado 19 de diciembre, 08:00</time><br>Laboratorios 1 a 4</p>
+          <p class="tarjeta__cupos"><span class="etiqueta">Cupos disponibles: 8 de 40</span></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear evento · EventosUSFA</title>
+  <meta name="description" content="Formulario para crear un evento.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="index.html">EventosUSFA</a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Eventos</a></li>
+          <li><a href="mis-inscripciones.html">Mis inscripciones</a></li>
+          <li><a href="panel.html">Panel del organizador</a></li>
+          <li><a href="login.html">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <h1>Crear evento</h1>
+    <p>Completa los datos del evento. Los campos son obligatorios.</p>
+    <form class="formulario" action="#" method="post">
+      <div class="campo">
+        <label for="titulo">Título del evento</label>
+        <input type="text" id="titulo" name="titulo" required minlength="5" maxlength="120">
+      </div>
+      <div class="campo">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Selecciona una opción</option>
+          <option value="taller">Taller</option>
+          <option value="conferencia">Conferencia</option>
+          <option value="deportivo">Deportivo</option>
+          <option value="cultural">Cultural</option>
+          <option value="feria">Feria</option>
+          <option value="competencia">Competencia</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="lugar">Lugar</label>
+        <input type="text" id="lugar" name="lugar" required maxlength="120">
+      </div>
+      <div class="campo">
+        <label for="inicio">Inicio</label>
+        <input type="datetime-local" id="inicio" name="inicio" required>
+      </div>
+      <div class="campo">
+        <label for="fin">Fin</label>
+        <input type="datetime-local" id="fin" name="fin" required>
+      </div>
+      <div class="campo">
+        <label for="cupos">Cupos</label>
+        <input type="number" id="cupos" name="cupos" required min="1" max="1000" step="1" inputmode="numeric" aria-describedby="cupos-ayuda">
+        <p class="ayuda" id="cupos-ayuda">Entre 1 y 1000 personas.</p>
+      </div>
+      <div class="campo">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="5" required minlength="20" maxlength="1000" aria-describedby="descripcion-ayuda"></textarea>
+        <p class="ayuda" id="descripcion-ayuda">Cuenta de qué trata el evento (20 a 1000 caracteres).</p>
+      </div>
+      <fieldset class="campo">
+        <legend>Estado</legend>
+        <label><input type="radio" name="estado" value="publicado" checked> Publicado</label>
+        <label><input type="radio" name="estado" value="borrador"> Borrador</label>
+      </fieldset>
+      <p><button class="boton" type="submit">Guardar evento</button></p>
+      <p><a href="panel.html">Cancelar</a></p>
+    </form>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 EventosUSFA · Proyecto del curso PPS-320 · Universidad Privada San Francisco de Asís</p>
+    </div>
+  </footer>
+</body>
+</html>
